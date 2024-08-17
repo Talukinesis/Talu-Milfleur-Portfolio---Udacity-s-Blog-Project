@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+/*section at the top of the homepage with photo and menu */
+.main {
+    display:flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    height: 100%;
+    grid-area: 2/1/15/51;
+}
+
+/* grid in home-container containing media that links to blog posts*/
+.additional {
+    display:grid;
+    /* border: 1px solid yellow; */
+    grid-template-columns: main main main main;
+    grid-gap: 3px;
+    grid-area: 21/1/60/51;
+    height:100%;
+    background-color: #fcfafa;
+    }
+
+/* sections in the home container that links to info pages */
+
+.about-page {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    grid-area: 60/1/62/50;
+    background-color: #fcfafa;
+}
+    .quote {
+        /* border:1px solid blue; */
+        text-align: center;
+        padding: 15px;
+        line-height: 14vw;
+    }
+
+.social {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: 32% 33% 32%;
+    grid-gap: 1%;
+    height: 100%;
+    grid-area: 66/1/68/50;
+}
+    /* grid inside social section that centers social icon links */
+    .icons {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+
+.video {
+    /* border: 1px solid blue; */
+    width:100%;
+    height: 100%;
+    grid-area: 63/1/72/50;
+}
+/* adjustments for screens larger than iphone SE
+and smaller than iPad mini */
+@media(min-width:389px){
+    .main{grid-area: 2/1/17/51;}
+
+    .additional{grid-area:26/1/72/51;}
+
+    .about-page{grid-area: 72/1/74/50;}
+
+    iframe {grid-area:75/1/85/50;}
+  
+    .video{grid-area: 75/1/85/50;}
+}
+
+@media(min-width:768px){
+    .main{grid-area: 3/1/18/51;}
+
+    .additional{
+        grid-area:31/3/52/49;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+    }
+
+    .about-page{grid-area: 52/1/56/50;}
+
+    iframe {grid-area:57/2/69/50;}
+  
+    .video{grid-area: 57/2/69/50;}
+}
+
+@media(min-width:769px){
+    .main{grid-area: 3/1/18/51;}
+
+    .additional{
+        grid-area:31/3/52/49;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+    }
+
+    .about-page{grid-area: 52/1/56/50;}
+
+    iframe {grid-area:57/2/69/50;}
+  
+    .video{grid-area: 57/2/69/50;}
+}

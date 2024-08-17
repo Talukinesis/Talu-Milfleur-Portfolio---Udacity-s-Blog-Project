@@ -1,0 +1,161 @@
+@charset "utf-8";
+@font-face {
+    font-family: Laviossa-Medium;
+    src: url(Laviossa-Medium.otf);}
+
+/*links on top of homepage */
+.front-menu {
+    grid-area: 15/1/20/22;
+    background-color: #fcfafa;
+    color: #121111;
+    display: grid;
+    grid-template-columns: repeat(50,2%);
+    grid-template-rows: repeat(20,5%);
+    font-family: "Laviossa-Medium",  serif;
+}
+
+    #digital-link {
+        font-size: 18.8vw;
+        line-height: 19vw;
+        text-decoration: none;
+        color: #121111;
+        grid-area: 7/1/7/49;
+    }
+
+    #portfolio-link {
+        font-size: 14.8vw;
+        line-height: 15vw;
+        text-decoration: none;
+        color: #121111;
+        grid-area: 1/1/1/49;
+    }
+
+    #measure-link {
+        font-size: 9.8vw;
+        line-height: 7vw;
+        text-decoration: none;
+        color: #121111;
+        grid-area: 16/1/16/49;
+    }
+
+
+/*links on top of blog post pages */
+.menu {
+display:grid;
+grid-area: 3/3/8/45;
+text-decoration: none;
+font-family: "Laviossa-Medium",  serif;
+}
+
+    #portfolio {
+        font-size: 13.8vw;
+        line-height: 8vw;
+        text-decoration: none;
+        color: #121111;
+    }
+
+    #blog {
+        font-size: 29.6vw;
+        line-height: 28vw;
+        text-decoration: none;
+        color: #121111;
+    }
+
+    #about {
+        font-size: 22.6vw;
+        line-height: 15vw;
+        text-decoration: none;
+        color: #121111;
+    }
+
+    #contact {
+        font-size: 16.6vw;
+        line-height: 18vw;
+        text-decoration: none;
+        color: #121111;
+    }
+    
+    /* links on the portfolio page */
+    #portfolio-digital {
+        font-size: 17.5vw;
+        line-height: 20vw;
+    }
+
+    #portfolio-blog {
+        font-size: 29.5vw;
+        line-height: 18vw
+    }
+
+    #portfolio-about {
+        font-size: 22.5vw;
+        line-height: 26vw
+    }
+
+    #portfolio-contact {
+        font-size: 16.5vw;
+        line-height: 8vw
+    }
+
+    /* adjustments for medium screens like iphone 14 */
+@media(min-width:389px){
+    .front-menu{grid-area:18/1/24/22;}
+    }
+        #measure-link{
+            font-size: 10vw;
+        }
+
+        /* adjustments for larger phone screens */
+        @media(min-width:768px){
+            .menu {grid-area:3/3/9/45;}
+      
+            #portfolio {
+                font-size: 9vw;
+                line-height: 7vw;
+                text-decoration: none;
+                color: #121111;
+            }
+            #blog {
+                font-size: 19vw;
+                line-height: 18vw;
+                text-decoration: none;
+                color: #121111;
+            }
+        
+            #about {
+                font-size: 14.4vw;
+                line-height: 12vw;
+                text-decoration: none;
+                color: #121111;
+            }
+        
+            #contact {
+                font-size: 10.5vw;
+                line-height: 10vw;
+                text-decoration: none;
+                color: #121111;
+            }
+         /* portfolio menu */
+            #portfolio-digital {
+                font-size: 11.3vw;
+                line-height: 8vw;
+            }
+        
+            #portfolio-blog {
+                font-size: 19vw;
+                line-height: 17vw
+            }
+        
+            #portfolio-about {
+                font-size: 14.2vw;
+                line-height: 13vw
+            }
+        
+            #portfolio-contact {
+                font-size: 10.5vw;
+                line-height: 7vw
+            }
+    }
+/* adjustments for screens larger than ipad mini */
+    @media(min-width:769px){
+
+    }

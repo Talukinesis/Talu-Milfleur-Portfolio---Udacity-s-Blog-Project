@@ -1,0 +1,201 @@
+@charset "utf-8";
+/* This page ensures each photo fits perfectly in the frame 
+for each card despite the size */
+
+/* homepage assets */
+#post-one {
+    grid-area: 1/1/17/21; /*parent is main*/
+    background-image: url(http://placebear.com/1150/1750);
+    padding:5px;
+}
+
+#post-two {
+    background-image: url(http://placebear.com/1150/1750);
+    grid-area: 1/2/23/20; /*parent is additional*/
+    display: grid; /* to position the button on the card*/
+    grid-template-rows: repeat(10, 10%);
+}
+#post-three {
+    background-image: url(http://placebear.com/1150/1750);
+    grid-area: 1/2/23/20; /*parent is additional*/
+    display: grid;
+    grid-template-rows: repeat(10, 10%);
+}
+#post-four {
+    background-image: url(http://placebear.com/1150/1750);
+    grid-area: 1/2/23/20; /*parent is additional*/
+    display: grid;
+    grid-template-rows: repeat(10, 10%);
+}
+#post-five {
+    background-image: url(http://placebear.com/1150/1750);
+    grid-area: 1/2/23/20; /*parent is additional*/
+    display: grid; 
+    grid-template-rows: repeat(10, 10%);
+}
+
+/* digitals assets */
+#digital-0 {background-image: url(http://placebear.com/1120/1100);}
+
+#digital-preview {background-image: url(http://placebear.com/1150/1375);}
+
+#digital1 {background-image: url(http:placebear.com/1120/1100);}
+
+#digital2 {background-image: url(http:placebear.com/1120/1100);}
+
+#digital3 {background-image: url(http:placebear.com/1120/1100);}
+
+#digital4 {background-image: url(http:placebear.com/1120/1100);}
+
+#digital5 {background-image: url(http:placebear.com/1120/1100);}
+
+#digital6 {background-image: url(http:placebear.com/1120/1100);}
+
+/* blog-post2 assets */
+#shoot2-0 {background-image: url(http://placebear.com/1120/1100);}
+
+#shoot2-preview {background-image: url(http://placebear.com/1150/1375);}
+
+#shoot2-photo1 {background-image: url(http:placebear.com/1120/1100);}
+
+#shoot2-photo2 {background-image: url(http:placebear.com/1120/1100);}
+
+#shoot2-photo3 {background-image: url(http:placebear.com/1120/1100);}
+
+#shoot2-photo4 {background-image: url(http:placebear.com/1120/1100);}
+
+#shoot2-photo5 {background-image: url(http:placebear.com/1120/1100);}
+
+#shoot2-photo6 {background-image: url(http:placebear.com/1120/1100);}
+
+/* blog-post3 assets */
+#shoot3-0 {background-image: url(http://placebear.com/1120/1100);}
+
+#shoot3-preview {background-image: url(http://placebear.com/150/375);}
+
+#shoot3-photo1 {background-image: url(http:placebear.com/1120/1100);}
+
+#shoot3-photo2 {background-image: url(http:placebear.com/1120/1100);}
+
+#shoot3-photo3 {background-image: url(http:placebear.com/1120/1100);}
+
+#shoot3-photo4 {background-image: url(http:placebear.com/1120/1100);}
+
+#shoot3-photo5 {background-image: url(http:placebear.com/1120/1100);}
+
+#shoot3-photo6 {background-image: url(http:placebear.com/1120/1100);}
+
+/* blog-post4  assets */
+#shoot4-0 {background-image: url(http://placebear.com/1120/1100);}
+
+#shoot4-preview {background-image: url(http://placebear.com/150/375);}
+
+#shoot4-photo1 {background-image: url(http:placebear.com/1120/1100);}
+
+#shoot4-photo2 {background-image: url(http:placebear.com/1120/1100);}
+
+#shoot4-photo3 {background-image: url(http:placebear.com/1120/1100);}
+
+#shoot4-photo4 {background-image: url(http:placebear.com/1120/1100);}
+
+#shoot4-photo5 {background-image: url(http:placebear.com/1120/1100);}
+
+#shoot4-photo6 {background-image: url(http:placebear.com/1120/1100);}
+
+/* blog-post5  assets */
+#shoot5-0 {background-image: url(http://placebear.com/1120/1100);}
+
+#shoot5-preview {background-image: url(http://placebear.com/150/375);}
+
+#shoot5-photo1 {background-image: url(http:placebear.com/1120/1100);}
+
+#shoot5-photo2 {background-image: url(http:placebear.com/1120/1100);}
+
+#shoot5-photo3 {background-image: url(http:placebear.com/1120/1100);}
+
+#shoot5-photo4 {background-image: url(http:placebear.com/1120/1100);}
+
+#shoot5-photo5 {background-image: url(http:placebear.com/1120/1100);}
+
+#shoot5-photo6 {background-image: url(http:placebear.com/1120/1100);}
+
+/* info pages assets */
+#about-preview {background-image: url(http://placebear.com/150/375);}
+
+.about-photo {
+    background-image: url(http://placebear.com/1120/1100);
+    grid-area: 4/2/11/50;
+}
+
+/* portfolio page assets */
+#portfolio-0 {background-image: url(http://placebear.com/1120/1100);}
+
+#portfolio-preview {background-image: url(http://placebear.com/150/375);}
+
+#gallery1 {background-image: url(http:placebear.com/1120/1100);}
+
+#gallery2 {background-image: url(http:placebear.com/1120/1100);}
+
+#gallery3 {background-image: url(http:placebear.com/1120/1100);}
+
+#gallery4 {background-image: url(http:placebear.com/1120/1100);}
+
+#gallery5 {background-image: url(http:placebear.com/1120/1100);}
+
+#gallery6 {background-image: url(http:placebear.com/1120/1100);}
+
+#gallery7 {background-image: url(http:placebear.com/1120/1100);}
+
+#gallery8 {background-image: url(http:placebear.com/1120/1100);}
+
+#gallery9 {background-image: url(http:placebear.com/1120/1100);}
+
+#gallery10 {background-image: url(http:placebear.com/1120/1100);}
+
+#gallery11 {background-image: url(http:placebear.com/1120/1100);}
+
+#gallery12 {background-image: url(http:placebear.com/1120/1100);}
+
+#gallery13 {background-image: url(http:placebear.com/1120/1100);}
+
+#gallery14 {background-image: url(http:placebear.com/1120/1100);}
+
+#gallery15 {background-image: url(http:placebear.com/1120/1100);}
+
+#gallery16 {background-image: url(http:placebear.com/1120/1100);}
+
+/* art page assets */
+#art-0 {background-image: url(http://placebear.com/1120/1100);}
+
+#art-preview {background-image: url(http://placebear.com/150/375);}
+
+#art1 {background-image: url(http:placebear.com/1120/1100);}
+
+#art2 {background-image: url(http:placebear.com/1120/1100);}
+
+#art3 {background-image: url(http:placebear.com/1120/1100);}
+
+#art4 {background-image: url(http:placebear.com/1120/1100);}
+
+#art5 {background-image: url(http:placebear.com/1120/1100);}
+
+#art6 {background-image: url(http:placebear.com/1120/1100);}
+
+#art7 {background-image: url(http:placebear.com/1120/1100);}
+
+#art8 {background-image: url(http:placebear.com/1120/1100);}
+
+#art9 {background-image: url(http:placebear.com/1120/1100);}
+
+#art10 {background-image: url(http:placebear.com/1120/1100);}
+
+#art11 {background-image: url(http:placebear.com/1120/1100);}
+
+/* video asset */
+#model-walk {background-image: url(https://www.youtube.com/shorts/JldodpfYOa4);}
+
+#mohm-preview {background-image:url(http://placebear.com/1120/1100);}
+
+@media(min-width:389px){
+    .about-photo{grid-area: 3/2/15/25;}
+}

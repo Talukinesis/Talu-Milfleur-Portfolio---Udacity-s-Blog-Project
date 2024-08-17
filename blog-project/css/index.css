@@ -1,0 +1,150 @@
+@charset "utf-8";
+@import url(assets.css);
+@import url(typography.css);
+@import url(header.css);
+@import url(measurements.css);
+@import url(blog-posts.css); 
+@import url(info-pages.css);
+@import url(footer.css);
+@import url(menu.css);
+@import url(card.css);
+@import url(homepage.css);
+@font-face {
+    font-family: Laviossa-Medium;
+    src: url(Laviossa-Medium.otf);}
+
+/* the grid housing all sections in the homepage */
+.home-container {
+    width: 100%;
+    display:grid;
+    background-color: #fcfafa;
+    color: #121111;
+    grid-template-columns: repeat(50,2%);
+    grid-template-rows: repeat(72,50px);
+}
+ 
+/* the grid housing all sections in the info pages */
+.about-container {
+    width: 100%;
+    background-color: #fcfafa;
+    display: grid;
+    grid-template-columns: repeat(50,2%);
+    grid-template-rows: repeat(27,50px);
+}
+
+.portfolio-container {
+    width: 100%;
+    background-color: #fcfafa;
+    display: grid;
+    grid-template-columns: repeat(50,2%);
+    grid-template-rows: repeat(202,50px);
+}
+
+.art-container {
+    width: 100%;
+    background-color: #fcfafa;
+    display: grid;
+    grid-template-columns: repeat(50,2%);
+    grid-template-rows: repeat(157,50px);
+}
+
+
+.contact-container {
+    width: 100%;
+    background-color: #fcfafa;
+    display: grid;
+    grid-template-columns: repeat(50,2%);
+    grid-template-rows: repeat(12,50px);
+}
+
+/* the grid housing all sections in the blog posts */
+.post-container {
+    width: 100%;
+    background-color: #fcfafa;
+    display: grid;
+    grid-template-columns: repeat(50,2%);
+    grid-template-rows: repeat(72,50px);
+}
+.digital-post-container {
+    width: 100%;
+    background-color: #fcfafa;
+    display: grid;
+    grid-template-columns: repeat(50,2%);
+    grid-template-rows: repeat(79,50px);
+}
+
+/* adjustments for screens larger than iphone se, including XR,
+12pro, 14pro, pixel7, galaxy s8, galazy s20 ultra */
+@media(min-width:389px){
+    .home-container{grid-template-rows: repeat(85,50px);}
+}
+/* adjustments for ipad mini and surface duo */
+@media(min-width: 540px){
+    .home-container{
+        grid-template-rows: repeat(77,50px);
+        background-color:purple;}
+
+    .portfolio-container{grid-template-rows: repeat(108,50px);}
+
+    .digital-post-container{grid-template-rows: repeat(52,50px);}
+
+    .post-container{grid-template-rows: repeat(48,50px);}
+
+    .about-container{grid-template-rows:repeat(20,50px);}
+
+    .art-container{grid-template-rows: repeat(83,50px)}
+}
+
+/* adjustments for iipad air and asus zenbook */
+@media(min-width:819px) and (max-height:1280px){
+    .home-container{
+        grid-template-rows: repeat(140,50px);
+        background-color: red;
+    }
+
+    .portfolio-container{grid-template-rows: repeat(108,50px);}
+
+    .digital-post-container{grid-template-rows: repeat(52,50px);}
+
+    .post-container{grid-template-rows: repeat(48,50px);}
+
+    .about-container{grid-template-rows:repeat(20,50px);}
+
+    .art-container{grid-template-rows: repeat(83,50px);}
+}
+
+/* adjustments for screen sizes ipad pro and surface 7 pro */
+@media(min-width:912px) and (max-height:1368px){
+    .home-container{
+        grid-template-rows: repeat(140,50px);
+        background-color: rgb(255, 140, 0);
+    }
+
+    .portfolio-container{grid-template-rows: repeat(108,50px);}
+
+    .digital-post-container{grid-template-rows: repeat(52,50px);}
+
+    .post-container{grid-template-rows: repeat(48,50px);}
+
+    .about-container{grid-template-rows:repeat(20,50px);}
+
+    .art-container{grid-template-rows: repeat(83,50px);}
+}
+
+/* adjustments for nest hub and nesthub max as well as laptop and desktop size screens */
+@media(min-width:1023px) and (max-height:800px){
+    .home-container{
+        grid-template-rows: repeat(140,50px);
+        background-color: rgb(142, 255, 165);
+    }
+
+    .portfolio-container{grid-template-rows: repeat(108,50px);}
+
+    .digital-post-container{grid-template-rows: repeat(52,50px);}
+
+    .post-container{grid-template-rows: repeat(48,50px);}
+
+    .about-container{grid-template-rows:repeat(20,50px);}
+
+    .art-container{grid-template-rows: repeat(83,50px);}
+}

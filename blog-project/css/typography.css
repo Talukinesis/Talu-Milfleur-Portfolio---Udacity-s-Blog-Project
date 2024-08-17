@@ -1,0 +1,94 @@
+@charset "utf-8";
+@font-face {
+    font-family: Laviossa-Medium;
+    src: url(Laviossa-Medium.otf);
+}
+
+
+/* format for links in footer */
+.content-links {
+    text-decoration: none;
+    color:#121111;
+    font-size: 7vw;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-variant: small-caps;
+}
+
+/* type format for the blog title in header and footer */
+.title-link {
+    font-size: 9vw;
+    color: #121111;
+    text-decoration: none;
+    font-family: "Laviossa-Medium",  serif;
+}
+
+/* type format for the links in the front menu */
+a {
+    text-decoration: none;
+    color: #121111;
+    font-family:"Laviossa-Medium",  serif;
+    font-variant: small-caps;
+}
+
+/* so the link in the about section of the homepage looks like a link with the line under */
+#about-link {
+    text-decoration: underline;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-variant: small-caps;
+    color: #a3948e
+}
+
+/* type format for the about section in home page */
+.about-home {
+    font-size: 8vw;
+    line-height: 6.5vw;
+    font-family:"Laviossa-Medium",  serif;
+    font-variant: small-caps;
+}
+
+/* formatting type in about page */
+.about-title {
+    grid-area: 3/2/3/50;
+    line-height: 1vw;
+    font-family:"Laviossa-Medium",  serif;
+    font-variant: small-caps;
+}
+
+.about-type {
+    grid-area: 11/2/11/50;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-variant: small-caps;
+}
+/* the format for the measurements card title on the digitals page */
+#digital-measure {
+    font-size: 9.5vw;
+    line-height: 22vw;
+    grid-area: 70/3/70/50
+    }
+
+    @media(min-width:389px){
+        .about-home {
+        font-size: 8vw;
+        line-height: 6vw;}
+    }
+    @media(min-width:768px){
+        .content-links{font-size:5vw;}
+
+    #digital-measure {
+        font-size:5.5vw;
+        grid-area: 45/5/45/25;
+        line-height: 4vw;
+    }
+    .about-title{grid-area: 3/26/4/50;}
+    .about-type{
+        grid-area:4/26/26/50;
+        line-height: 3vw;
+    }
+    .cta{font-size: 3vw;}
+}
+
+@media(min-width:769px){
+    
+}
+
+    

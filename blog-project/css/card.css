@@ -1,0 +1,80 @@
+@charset "utf-8";
+@import url(media.css);
+
+.preview {
+    height: 96%;
+    width: 100%;
+    /* border: 1px solid rgb(254, 212, 255); */
+    flex-direction: column;
+}
+
+.card {
+    display:grid;
+    grid-template-columns: repeat(20,5%);
+    grid-template-rows: repeat(20,5%);
+    padding:0px;
+    /* border: 1px solid green; */
+    height: 100%;
+}
+
+.portfolio-card {
+    display:grid;
+    grid-template-columns: repeat(20,5%);
+    grid-template-rows: repeat(20,30px);
+    padding:0px;
+    /* border: 1px solid green; */
+    height: 100%;
+}
+
+.description {
+    padding:5px;
+    grid-area:19/1/21/22;
+    margin: 0px;
+    background-color: #fcfafa;
+    border: 3px solid #fcfafa;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-variant: small-caps;
+}
+/* styling and position of the buttons on the front page cards */
+
+    .btn {
+        background-color: #fcfafa75;
+        color: #12111185;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        grid-area: 20/1/20/20;
+        border: 2px solid #fcfafa85;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-variant: small-caps;
+    }
+      
+.btn:hover {
+        background-color: #12111185;
+        color: #fcfcfa;
+      }
+
+      .btn-container {
+        grid-area: 10/1/10/1;
+      }
+
+/*  */
+@media(min-width: 389px){
+    .btn{height: 14vw;}}
+
+
+@media(min-width:768px){
+    .preview{
+        height: 94%;
+        width: 96%;
+    }
+    .btn{height: 6.3vw;}
+}
+
+@media(min-width:769px){
+.preview{
+    height: 90%;
+}
+}
